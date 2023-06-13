@@ -4,6 +4,9 @@
  */
 package pemesanantiketkonsermusik;
 
+import forms.formUtama;
+import java.util.ArrayList;
+
 /**
  *
  * @author acer
@@ -19,6 +22,16 @@ public class Pemesanantiketkonsermusik {
           obj.setNama("gigih");
           System.out.println("Nama :"+obj.getNama());
         
+          ArrayList<String> no_tiket = new ArrayList<>();
+        no_tiket.add("1");
+        no_tiket.add("2");
+        no_tiket.add("3");
+        no_tiket.add("4");
+        
+        System.out.println(String.valueOf(no_tiket.size()));
+        System.out.println(no_tiket.get(3));
+        
+        new formUtama().setVisible(true);
     
     }
     
